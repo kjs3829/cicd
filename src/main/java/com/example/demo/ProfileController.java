@@ -18,4 +18,9 @@ public class ProfileController {
                 .findFirst()
                 .orElse("");
     }
+
+    @GetMapping("/health")
+    public String health() {
+        return "UP";
+    }
 }
